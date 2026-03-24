@@ -25,6 +25,21 @@ export default function PadelPreLaunch() {
 
   const handleSubmit = () => {
     if (email && email.includes("@")) {
+      const form = document.createElement("form");
+      form.action = "https://padelpadellv.us1.list-manage.com/subscribe/post?u=e28e6c0fc4d06c92cc6b73492&id=e45b329f7c&f_id=001bc3e0f0";
+      form.method = "POST";
+      form.target = "_blank";
+      const input = document.createElement("input");
+      input.name = "EMAIL";
+      input.value = email;
+      form.appendChild(input);
+      const bot = document.createElement("input");
+      bot.name = "b_e28e6c0fc4d06c92cc6b73492_e45b329f7c";
+      bot.value = "";
+      form.appendChild(bot);
+      document.body.appendChild(form);
+      form.submit();
+      document.body.removeChild(form);
       setSubmitted(true);
       setCount((c) => c + 1);
     }
