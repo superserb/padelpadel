@@ -94,11 +94,7 @@ export default function PadelPreLaunch() {
             <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 24, letterSpacing: 4, color: "#E8FF00" }}> PADEL</span>
             <span style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 24, color: "#f5f5f0" }}>.</span>
           </div>
-          <div className="anim-1" style={{ display: "flex", gap: 24 }}>
-            {["Instagram", "TikTok"].map((s) => (
-              <a key={s} className="social-link" href="#">{s}</a>
-            ))}
-          </div>
+          
         </nav>
 
         {/* Hero */}
